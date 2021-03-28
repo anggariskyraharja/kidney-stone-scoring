@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Kidney Stone Scoring</string>
+    <string name="title_activity_main">Kidney Stone Scoring</string>
+    <string name="package_name">com.imedicalapps.stonenephrolithometryscore</string>
+    <string name="custom_url_scheme">com.imedicalapps.stonenephrolithometryscore</string>
+    <string name="admob_app_id">ca-app-pub-9580735978410872~6883885934</string>
+</resources>

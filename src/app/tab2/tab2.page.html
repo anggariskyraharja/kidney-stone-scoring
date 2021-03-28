@@ -1,17 +1,82 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="ion-text-center">
     <ion-title>
-      Tab 2
+      The Guy's Stone Score
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item class="color11">
+    <ion-text>
+      <p>The Guy's Stone Score predicts the stone free rate after PCNL procedure.</p>
+    </ion-text>
+  </ion-item>
+  <ion-card class="color1">
+    <ion-card-content>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq1($event)">
+            <ion-text>Please select which of the following is the most suitable description for your kidney stone:</ion-text>
+            <ion-item-divider class="color2"></ion-item-divider>
+            <ion-item-divider class="color11a">Grade I</ion-item-divider>
+            <ion-item class="color2">
+            <p>A solitary stone in the mid/lower pole with simple anatomy</p>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>A solitary stone in the pelvis with simple anatomy</p>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+          <ion-item-divider class="color11a">Grade II</ion-item-divider>
+          <ion-item class="color2">
+            <p>A solitary stone in the upper pole with simple anatomy</p>
+            <ion-radio slot="start" value="q13"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>Multiple stones in a patient with simple anatomy</p>
+            <ion-radio slot="start" value="q14"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>Any solitary stone in a patient with abnormal anatomy</p>
+            <ion-radio slot="start" value="q15"></ion-radio>
+          </ion-item>
+          <ion-item-divider class="color11a">Grade III</ion-item-divider>
+          <ion-item class="color2">
+            <p>Multiple stones in a patient with abnormal anatomy</p>
+            <ion-radio slot="start" value="q16"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>Stones in a calyceal diverticulum</p>
+            <ion-radio slot="start" value="q17"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>Partial staghorn calculus</p>
+            <ion-radio slot="start" value="q18"></ion-radio>
+          </ion-item>
+          <ion-item-divider class="color11a">Grade IV</ion-item-divider>
+          <ion-item class="color2">
+            <p>Staghorn calculus</p>
+            <ion-radio slot="start" value="q19"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <p>Any stone in a patient with Spina Bifida or Spinal Injury</p>
+            <ion-radio slot="start" value="q110"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <p><i>a) Score based on all stones seen – not just those targeted in procedure.</i></p>
+      <p><i>b) Abnormal anatomy is defined as: abnormal renal anatomy, an abnormal collecting system, or a patient with an ileal conduit (i.e. cases where operating surgeon believes access may be difficult).</i></p>
+      <p><i>c) Stent encrustation does not affect score.</i></p>
+      </ion-card-content>
+</ion-card>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-card class="color111">
+  <div>
+    <p><u><b>The Guy's Stone Score Result:</b></u></p>
+    <p><i>{{classification1}}</i></p>
+    <p *ngIf="classification1"><i>{{classification2}}</i></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://www.goldjournal.net/article/S0090-4295(10)02164-3/fulltext">Click here for the reference!</a></p>
+  </div>
+  </ion-card>
+
 </ion-content>

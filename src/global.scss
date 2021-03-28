@@ -24,3 +24,91 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+    --ion-color-primary: #51624F;
+    --ion-background-color: #FFFFFF;
+}
+#ForRadioOptions
+.alert-radio-label.sc-ion-alert-md,
+.alert-radio-label.sc-ion-alert-ios {
+   white-space: normal;
+}
+.alert-tappable.alert-radio {
+   height: auto;
+   contain: content;
+}
+#ForCheckbox
+.alert-checkbox-label.sc-ion-alert-md,
+.alert-checkbox-label.sc-ion-alert-ios {
+   white-space: normal;
+}
+.alert-tappable.alert-checkbox {
+   height: auto;
+   contain: content;
+}
+ion-toolbar {
+    --background: #51624F;
+    --border-style: solid;
+    --border-color: #51624F;
+    --color: #ffffff;
+}
+ion-label {
+    font-size: 1.0em !important;
+}
+ion-radio {
+    --color-checked: #51624F;
+}
+.color2 {
+    --background: #FBCB4B;
+    --border-style: solid;
+    --border-color: #FBCB4B;
+    --color: #000000;
+    text-align: justify;
+}
+.color11a {
+  --background: #e6f0df;
+  --border-style: solid;
+  --border-color: #e6f0df;
+  --color: #000000;
+  text-align: justify;
+}
+.color11 {
+    --background: #AEBEA1;
+    --border-style: solid;
+    --border-color: #AEBEA1;
+    --color: #000000;
+    text-align: justify;
+}
+.color111 {
+  --background: #FBCB4B;
+  --border-style: solid;
+  --border-color: #FBCB4B;
+  --color: #000000;
+  text-align: center;
+}
+.color1 {
+    --background:#51624F;
+    --border-style: solid;
+    --border-color: #51624F;
+    --color: #fff;
+    text-align: justify;
+}
+.color3 {
+    --background: #FBCB4B;
+    --border-style: solid;
+    --border-color: #FBCB4B;
+    --color: #000000;
+    text-align: justify;
+}
+.color4 {
+    --background: #050A30;
+    --border-style: solid;
+    --border-color: #050A30;
+    --color: #ffffff;
+    text-align: center;
+}
+
+.color5 {
+    --background: #ffffff;
+}

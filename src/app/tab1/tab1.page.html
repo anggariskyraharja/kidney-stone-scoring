@@ -1,17 +1,112 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="ion-text-center">
     <ion-title>
-      Tab 1
+      STONE Score
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item class="color11">
+    <ion-text>
+      <p>STONE Nephrolithometry Score predicts stone free status of kidney stone after PCNL based on radiological criteria.</p>
+    </ion-text>
+  </ion-item>
+  <ion-card class="color1">
+    <ion-card-content>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq1($event)">
+            <ion-text>Stone size in mm²</ion-text>
+          <ion-item class="color2">
+            <ion-text>0-399</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>400-799</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>800-1599</ion-text>
+            <ion-radio slot="start" value="q13"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>>1600</ion-text>
+            <ion-radio slot="start" value="q14"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <p><i>Length × width in mm.</i></p>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq2($event)">
+            <ion-text>Tract length (mm)</ion-text>
+          <ion-item class="color2">
+            <ion-text>≤100 mm</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>>100 mm</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <p><i>Distance from center of stone to the skin measured on CT film at 0°, 45°, and 90°.</i></p>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq3($event)">
+            <ion-text>Obstruction (hydronephrosis)</ion-text>
+          <ion-item class="color2">
+            <ion-text>No or mild</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>Moderate or severe</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq4($event)">
+            <ion-text>Number of calyces with calculi</ion-text>
+          <ion-item class="color2">
+            <ion-text>1-2</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>3</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>Full staghorn stone</ion-text>
+            <ion-radio slot="start" value="q13"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item-divider class="color1"></ion-item-divider>
+      <ion-item class="color2">
+        <ion-radio-group (ionChange)="checkq5($event)">
+            <ion-text>Stone density in Hounsfield units (HU).</ion-text>
+          <ion-item class="color2">
+            <ion-text>≤950 HU</ion-text>
+            <ion-radio slot="start" value="q11" ></ion-radio>
+          </ion-item>
+          <ion-item class="color2">
+            <ion-text>>950 HU</ion-text>
+            <ion-radio slot="start" value="q12"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      </ion-card-content>
+</ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-card class="color111">
+  <div>
+    <p><u><b>STONE Nephrolithometry Score Result:</b></u></p>
+    <p><i>{{classification1}}</i></p>
+    <p *ngIf="classification1"><i>{{classification2}}</i></p>
+    <p><a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/23540858/">Click here for the reference!</a></p>
+  </div>
+  </ion-card>
+
 </ion-content>

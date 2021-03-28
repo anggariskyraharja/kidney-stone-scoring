@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "323580330295",
+    "project_id": "kidney-stone-scoring",
+    "storage_bucket": "kidney-stone-scoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:323580330295:android:bd0c9e1ef14930efbe5ab2",
+        "android_client_info": {
+          "package_name": "com.imedicalapps.stonenephrolithometryscore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "323580330295-33pq4eunshcib0kgcbgfl4bebjjmb7ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_MEs0xXu5u3WJGt7f5C3vPXFe-9Dpolk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "323580330295-33pq4eunshcib0kgcbgfl4bebjjmb7ta.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "323580330295-2dbok1oihv7qsumvei81p1ql2dhe2n9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.imedicalapps.stonenephrolithometryscore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
